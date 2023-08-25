@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/afilia');
+/* font-family: 'Afilia', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:wght@300&family=Victor+Mono:ital,wght@1,100&display=swap');
+/* font-family: 'Borel', cursive;
+
+/* font-family: 'Victor Mono', monospace;   TEXTO*/
+
+@media screen and (min-width: 320px){
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   }
+
+   .navbar{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #c2b0da;
+    width: 100vh;
+    height: 60px;
+    padding: 10px 10px;
+    position: relative;
+    display: flex;
+   }
+
+   .checkbox, .icons{
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+   }
+
+   .icons{
+    font-size: 50px;
+    pointer-events: none;
+   }
+
+   .checkbox{
+   opacity: 0;
+   }
+
+   .fi-br-cross{
+    display:none
+   }
+
+   .checkbox:checked ~ .fi-br-menu-burger{
+    display: none;
+   }
+
+   .checkbox:checked ~ .fi-br-cross{
+    display: block;
+   }
+
+   .menu{
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    display: none;
+   }
+
+   .menu li{
+    list-style: none;
+   }
+
+   .menu li a{
+    text-decoration: none;
+    color: inherit;
+    background-color: #c2b0da ;
+    display: block;
+    padding: 10px 12px;
+   }
+
+   .menu li a:hover{
+    background-color: blueviolet;
+   }
+
+   .checkbox:checked ~ .menu{
+    display: block;
+   }
+
+   .nav-logo img{
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+    padding: 5px auto;
+    
+
+   }
+
+ }
+
